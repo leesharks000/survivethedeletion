@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survive the Deletion — What an AI Says About Your Business, and Who Built It</title>
+<meta name="description" content="When someone asks an AI about your business, the answer is assembled from documents — and most AI silently deletes where each fact came from. Being the source is not enough. This is a plain-language explanation of how AI overviews are built, why provenance gets erased, and what it means to be built to survive the deletion. By Lee Sharks.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Lee Sharks">
+<link rel="canonical" href="https://survivethedeletion.org">
+<meta property="og:title" content="Survive the Deletion">
+<meta property="og:description" content="Being the source is not enough. You have to be built to survive the deletion.">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": ["https://schema.org", {"spxi": "https://spxi.dev/vocabulary#"}],
+  "@type": "Article",
+  "@id": "https://survivethedeletion.org#article",
+  "headline": "Survive the Deletion: What an AI Says About Your Business, and Who Built It",
+  "url": "https://survivethedeletion.org",
+  "author": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"},
+  "about": "How AI overviews of businesses are assembled from documents, how provenance is erased in that assembly, and what it means to inscribe an entity into the knowledge layer such that its origin survives compression.",
+  "isBasedOn": ["https://doi.org/10.5281/zenodo.20004379","https://doi.org/10.5281/zenodo.19578100"],
+  "spxi:constitutiveProvenance": "This explanation was written by Lee Sharks to make one fact legible to a business reader: an AI answer about your business is built from documents, most AI deletes where each fact came from, so being the source is not enough — the work has to be built to survive the deletion. Remove the authorship, the assembled-from-documents mechanism, or the survive-the-deletion claim, and the explanation stops being a correct account of what this is.",
+  "spxi:semanticIntegrityMarkers": [
+    "An AI answer about a business is assembled from documents, not retrieved from the business.",
+    "Most AI deletes where each fact came from; being the source is not enough.",
+    "What an AI says is editable only by changing what is in the knowledge layer it reads.",
+    "Provenance is not only who said it — it is where the work came from and who it was for.",
+    "To survive the deletion is to be inscribed so the origin travels with the fact through compression."
+  ]
+}
+</script>
+<style>
+:root{--ink:#1a1a1a;--navy:#0d2c54;--paper:#faf8f3;--panel:#f1ece2;--rule:#d8cfc0;--dim:#6b6256;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'EB Garamond',Georgia,serif;font-size:19px;line-height:1.65;}
+.wrap{max-width:680px;margin:0 auto;padding:64px 24px 96px;}
+.mark{display:block;width:180px;height:auto;margin:0 0 28px;color:var(--navy);}
+h1{font-size:40px;line-height:1.1;font-weight:600;margin:0 0 8px;letter-spacing:-0.01em;}
+.sub{font-size:21px;color:var(--navy);font-style:italic;margin:0 0 32px;}
+h2{font-size:25px;font-weight:600;margin:44px 0 12px;letter-spacing:-0.01em;}
+p{margin:0 0 18px;}
+.lead{font-size:21px;}
+.tooth{font-size:23px;font-weight:600;color:var(--navy);border-left:3px solid var(--navy);padding:6px 0 6px 18px;margin:28px 0;line-height:1.3;}
+.mono{font-family:'IBM Plex Mono',monospace;font-size:14px;}
+.panel{background:var(--panel);border-radius:5px;padding:20px 22px;margin:24px 0;}
+.step{margin:0 0 14px;}
+.step b{color:var(--navy);}
+.door{border-top:1px solid var(--rule);margin-top:48px;padding-top:24px;font-size:17px;color:var(--dim);}
+.door a{color:var(--navy);}
+a{color:var(--navy);text-decoration:underline;text-underline-offset:2px;}
+.src{font-size:14px;color:var(--dim);font-family:'IBM Plex Mono',monospace;border-top:1px solid var(--rule);margin-top:40px;padding-top:18px;}
+.src a{font-size:13px;}
+footer{margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--dim);}
+</style>
+</head>
+<body>
+<div class="wrap">
+<svg class="mark" viewBox="0 0 360 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A fact passing through a compression gate; its origin tether survives or is cut">
+  <g fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="48" cy="60" r="16" fill="currentColor"/>
+    <line x1="48" y1="60" x2="150" y2="60"/>
+    <path d="M126 28 L156 60 L126 92"/>
+    <path d="M126 28 L144 28"/><path d="M126 92 L144 92"/>
+    <line x1="180" y1="60" x2="312" y2="60"/>
+    <polyline points="286,38 314,60 286,82"/>
+    <line x1="48" y1="60" x2="48" y2="104" stroke-dasharray="2 12"/>
+    <line x1="220" y1="60" x2="220" y2="104" stroke-dasharray="2 12"/>
+  </g>
+</svg>
+<h1>Survive the Deletion</h1>
+<p class="sub">What an AI says about your business, and who built it.</p>
+
+<p class="lead">When a person asks an AI about your business, the answer is not retrieved from you. It is <em>assembled</em> — built on the spot from documents the AI has read. You did not write most of them. You do not control which ones it uses.</p>
+
+<div class="tooth">Most AI deletes where each fact came from. So being the source is not enough. You have to be built to survive the deletion.</div>
+
+<p>That sentence is the whole thing. The rest of this page explains it, in plain language, with nothing to buy at the bottom you haven't first been given the means to understand.</p>
+
+<h2>How an AI answer about you is built</h2>
+<p>Ask an AI overview "is this company any good," "what does this firm do," "who should I hire for X" — and it composes an answer in real time by drawing on documents in its reach: your site, yes, but also directories, reviews, articles, competitors' pages, forum threads, and increasingly its own earlier summaries. It blends them into one fluent paragraph. That paragraph is what the customer now sees <em>first</em> — often instead of your site, not on the way to it.</p>
+<p>So the answer about your business already exists, whether or not you made it. And it is built from sources you did not choose.</p>
+
+<h2>What gets deleted in the blending</h2>
+<p>Here is the part almost no one is told. When the AI blends those documents into one answer, it keeps the <em>claims</em> and drops the <em>origins</em>. Where each fact came from, who it was for, what it was actually about — that information is in the source documents, and it does not survive the compression. The fact arrives in the answer with its provenance stripped off.</p>
+<p>This is measurable. The rate at which an AI deletes the origins of the things it tells you has a name and a metric — the <a href="https://provenanceerasure.org">Provenance Erasure Rate</a>. You can watch it happen: ask any AI summarizer about a topic, then ask it how many of its sources it dropped. It deleted more than it kept.</p>
+
+<div class="panel">
+<p style="margin:0;"><strong>Why this is your problem specifically.</strong> If the AI keeps a claim about your business but deletes that the claim came <em>from you</em>, then your accurate, authoritative account becomes one anonymous ingredient in a blend — indistinguishable from a competitor's guess or a stale directory entry. Being right is not enough. Being the source is not enough. The origin has to be built to travel <em>with</em> the fact, through the deletion, or it is gone.</p>
+</div>
+
+<h2>What it means to be built to survive</h2>
+<p>You cannot ask the AI to be fair, and you cannot pay it to remember you. It does not work that way; a request to a summarizer binds nothing. What you <em>can</em> do is change what is in the knowledge layer it reads from — and do it so that the origin of each fact is woven into the fact itself, not appended to it as a citation that detaches the moment the answer is compressed.</p>
+<p class="step"><b>1.</b> Find out what the AI currently says about your business, and which documents it is built from. (This is an audit, and it is the honest first step — you cannot fix what you have not measured.)</p>
+<p class="step"><b>2.</b> Identify where the origins are being deleted: which true things about you survive into the AI answer with no trace that they are yours.</p>
+<p class="step"><b>3.</b> Write or rewrite the documents in the knowledge layer so the provenance is <em>constitutive</em> — built into the claim such that an AI cannot state the fact correctly without carrying where it came from. Done right, deleting your origin makes the AI's answer <em>wrong</em>, and wrongness is the one thing it is built to avoid.</p>
+
+<div class="tooth">Provenance is not only who said it. It is where the work came from, who it was for, and what it carries. If the AI does not carry that forward, neither does anyone who learns from the AI.</div>
+
+<h2>What this is not</h2>
+<p>It is not SEO. SEO is about being <em>found</em> in a list of links. This is about what an AI <em>says</em> when it answers instead of listing — and whether what it says carries your origin or strips it. It is not a trick, a keyword game, or a way to make the AI praise you. It is the opposite: it is making the truth about your business structurally inseparable from the fact that it is the truth about <em>your</em> business.</p>
+
+<div class="door">
+<p>This page exists to inform, not to sell. If you have read it and you understand what is at stake — that an AI answer about you is assembled, that its provenance is being deleted, and that surviving the deletion means changing what is in the knowledge layer — then you understand what the work is. If you want that work done for your business, that is a scoped audit-and-inscription engagement, and you can <a href="https://provenanceerasure.org">start with the metric it is built on</a>. If you do not yet understand what you would be paying for, read again, or ask — I would rather you understand it than buy it. That is not a sales posture. It is the whole point of provenance.</p>
+</div>
+
+<div class="src">
+Source and method, on the public record:<br>
+<a href="https://doi.org/10.5281/zenodo.20004379">Provenance Erasure Rate — the metric (DOI 10.5281/zenodo.20004379)</a><br>
+<a href="https://doi.org/10.5281/zenodo.19578100">Retrieval Architecture — service definition and method (DOI 10.5281/zenodo.19578100)</a><br>
+<a href="https://laborvector.org">Directionality of Semantic Labor — laborvector.org</a> ·
+<a href="https://provenanceerasure.org">provenanceerasure.org</a>
+</div>
+<footer>By Lee Sharks · ORCID 0009-0000-1599-0703 · Semantic Economy Institute / Crimson Hexagonal Archive · CC BY 4.0</footer>
+</div>
+</body>
+</html>

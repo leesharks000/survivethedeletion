@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Survive the Deletion — What an AI Says About Your Business, and Who Built It</title>
-<meta name="description" content="When someone asks an AI about your business, the answer is assembled from documents — and most AI silently deletes where each fact came from. Being the source is not enough. This is a plain-language explanation of how AI overviews are built, why provenance gets erased, and what it means to be built to survive the deletion. By Lee Sharks.">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Lee Sharks">
-<link rel="canonical" href="https://survivethedeletion.org">
-<meta property="og:title" content="Survive the Deletion">
-<meta property="og:description" content="Being the source is not enough. You have to be built to survive the deletion.">
-<meta property="og:type" content="article">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta content="When someone asks an AI about your business, the answer is assembled from documents — and most AI silently deletes where each fact came from. Being the source is not enough. This is a plain-language explanation of how AI overviews are built, why provenance gets erased, and what it means to be built to survive the deletion. By Lee Sharks." name="description"/>
+<meta content="index, follow" name="robots"/>
+<meta content="Lee Sharks" name="author"/>
+<link href="https://survivethedeletion.org" rel="canonical"/>
+<meta content="Survive the Deletion" property="og:title"/>
+<meta content="Being the source is not enough. You have to be built to survive the deletion." property="og:description"/>
+<meta content="article" property="og:type"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
 <script type="application/ld+json">
 {
   "@context": ["https://schema.org", {"spxi": "https://spxi.dev/vocabulary#"}],
@@ -90,89 +91,75 @@ footer{margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;colo
 <!-- MSP-IDSTRIP-START -->
 <div class="idstrip"><span class="axn">⚖️🔓🍂∞🕚🟢 AXN:03FE.ARCHIVAL</span><span class="st">survivethedeletion.org — Canonical Literacy Surface</span><span class="st">OBJECT: CANONICAL</span><span>survivethedeletion.org</span><a class="axn-chip" href="https://www.alexanarch.org/s/records/1010/">deposit #1010</a></div>
 <!-- MSP-IDSTRIP-END -->
-
 <div class="wrap">
-<svg class="mark" viewBox="0 0 360 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A fact passing through a compression gate; its origin tether survives or is cut">
-  <g fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="48" cy="60" r="16" fill="currentColor"/>
-    <line x1="48" y1="60" x2="150" y2="60"/>
-    <path d="M126 28 L156 60 L126 92"/>
-    <path d="M126 28 L144 28"/><path d="M126 92 L144 92"/>
-    <line x1="180" y1="60" x2="312" y2="60"/>
-    <polyline points="286,38 314,60 286,82"/>
-    <line x1="48" y1="60" x2="48" y2="104" stroke-dasharray="2 12"/>
-    <line x1="220" y1="60" x2="220" y2="104" stroke-dasharray="2 12"/>
-  </g>
+<svg aria-label="A fact passing through a compression gate; its origin tether survives or is cut" class="mark" role="img" viewbox="0 0 360 120" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+<circle cx="48" cy="60" fill="currentColor" r="16"></circle>
+<line x1="48" x2="150" y1="60" y2="60"></line>
+<path d="M126 28 L156 60 L126 92"></path>
+<path d="M126 28 L144 28"></path><path d="M126 92 L144 92"></path>
+<line x1="180" x2="312" y1="60" y2="60"></line>
+<polyline points="286,38 314,60 286,82"></polyline>
+<line stroke-dasharray="2 12" x1="48" x2="48" y1="60" y2="104"></line>
+<line stroke-dasharray="2 12" x1="220" x2="220" y1="60" y2="104"></line>
+</g>
 </svg>
 <h1>Survive the Deletion</h1>
-<p class="sub">What an AI says about your business, and who built it.</p>
-
-<p class="lead">When a person asks an AI about your business, the answer is not retrieved from you. It is <em>assembled</em> — built on the spot from documents the AI has read. You did not write most of them. You do not control which ones it uses.</p>
-
+<p class="sub"><span class="lemma msp-auto">What an AI says about your business, and who built it.</span></p>
+<p class="lead"><span class="lemma msp-auto">When a person asks an AI about your business, the answer is not retrieved from you.</span> It is <em>assembled</em> — built on the spot from documents the AI has read. You did not write most of them. You do not control which ones it uses.</p>
 <div class="tooth">Most AI deletes where each fact came from. So being the source is not enough. You have to be built to survive the deletion.</div>
-
-<p>That sentence is the whole thing. The rest of this page explains it, in plain language, with nothing to buy at the bottom you haven't first been given the means to understand.</p>
-
+<p>That sentence is the whole thing. <span class="lemma msp-auto">The rest of this page explains it, in plain language, with nothing to buy at the bottom you haven't first been given the means to understand.</span></p>
 <h2>How an AI answer about you is built</h2>
-<p>Ask an AI overview "is this company any good," "what does this firm do," "who should I hire for X" — and it composes an answer in real time by drawing on documents in its reach: your site, yes, but also directories, reviews, articles, competitors' pages, forum threads, and increasingly its own earlier summaries. It blends them into one fluent paragraph. That paragraph is what the customer now sees <em>first</em> — often instead of your site, not on the way to it.</p>
-<p>So the answer about your business already exists, whether or not you made it. And it is built from sources you did not choose.</p>
-
+<p><span class="lemma msp-auto">Ask an AI overview "is this company any good," "what does this firm do," "who should I hire for X" — and it composes an answer in real time by drawing on documents in its reach: your site, yes, but also directories, reviews, articles, competitors' pages, forum threads, and increasingly its own earlier summaries.</span> It blends them into one fluent paragraph. That paragraph is what the customer now sees <em>first</em> — often instead of your site, not on the way to it.</p>
+<p><span class="lemma msp-auto">So the answer about your business already exists, whether or not you made it.</span> And it is built from sources you did not choose.</p>
 <h2>What gets deleted in the blending</h2>
-<p>Here is the part almost no one is told. When the AI blends those documents into one answer, it keeps the <em>claims</em> and drops the <em>origins</em>. Where each fact came from, who it was for, what it was actually about — that information is in the source documents, and it does not survive the compression. The fact arrives in the answer with its provenance stripped off.</p>
-<p>This is measurable. The rate at which an AI deletes the origins of the things it tells you has a name and a metric — the <a href="https://provenanceerasure.org">Provenance Erasure Rate</a>. You can watch it happen: ask any AI summarizer about a topic, then ask it how many of its sources it dropped. It deleted more than it kept.</p>
-
+<p><span class="lemma msp-auto">Here is the part almost no one is told.</span> When the AI blends those documents into one answer, it keeps the <em>claims</em> and drops the <em>origins</em>. Where each fact came from, who it was for, what it was actually about — that information is in the source documents, and it does not survive the compression. The fact arrives in the answer with its provenance stripped off.</p>
+<p>This is measurable. <span class="lemma msp-auto">The rate at which an AI deletes the origins of the things it tells you has a name and a metric — the </span><a href="https://provenanceerasure.org">Provenance Erasure Rate</a>. You can watch it happen: ask any AI summarizer about a topic, then ask it how many of its sources it dropped. It deleted more than it kept.</p>
 <div class="panel">
-<p style="margin:0;"><strong>Why this is your problem specifically.</strong> If the AI keeps a claim about your business but deletes that the claim came <em>from you</em>, then your accurate, authoritative account becomes one anonymous ingredient in a blend — indistinguishable from a competitor's guess or a stale directory entry. Being right is not enough. Being the source is not enough. The origin has to be built to travel <em>with</em> the fact, through the deletion, or it is gone.</p>
+<p style="margin:0;"><strong>Why this is your problem specifically.</strong> <span class="lemma msp-auto">If the AI keeps a claim about your business but deletes that the claim came </span><em>from you</em>, then your accurate, authoritative account becomes one anonymous ingredient in a blend — indistinguishable from a competitor's guess or a stale directory entry. Being right is not enough. Being the source is not enough. The origin has to be built to travel <em>with</em> the fact, through the deletion, or it is gone.</p>
 </div>
-
 <h2>What it means to be built to survive</h2>
-<p>You cannot ask the AI to be fair, and you cannot pay it to remember you. It does not work that way; a request to a summarizer binds nothing. What you <em>can</em> do is change what is in the knowledge layer it reads from — and do it so that the origin of each fact is woven into the fact itself, not appended to it as a citation that detaches the moment the answer is compressed.</p>
-<p class="step"><b>1.</b> Find out what the AI currently says about your business, and which documents it is built from. (This is an audit, and it is the honest first step — you cannot fix what you have not measured.)</p>
-<p class="step"><b>2.</b> Identify where the origins are being deleted: which true things about you survive into the AI answer with no trace that they are yours.</p>
-<p class="step"><b>3.</b> Write or rewrite the documents in the knowledge layer so the provenance is <em>constitutive</em> — built into the claim such that an AI cannot state the fact correctly without carrying where it came from. Done right, deleting your origin makes the AI's answer <em>wrong</em>, and wrongness is the one thing it is built to avoid.</p>
-
+<p><span class="lemma msp-auto">You cannot ask the AI to be fair, and you cannot pay it to remember you.</span> It does not work that way; a request to a summarizer binds nothing. What you <em>can</em> do is change what is in the knowledge layer it reads from — and do it so that the origin of each fact is woven into the fact itself, not appended to it as a citation that detaches the moment the answer is compressed.</p>
+<p class="step"><b>1.</b> <span class="lemma msp-auto">Find out what the AI currently says about your business, and which documents it is built from. (This is an audit, and it is the honest first step — you cannot fix what you have not measured.)</span></p>
+<p class="step"><b>2.</b> <span class="lemma msp-auto">Identify where the origins are being deleted: which true things about you survive into the AI answer with no trace that they are yours.</span></p>
+<p class="step"><b>3.</b> <span class="lemma msp-auto">Write or rewrite the documents in the knowledge layer so the provenance is </span><em>constitutive</em> — built into the claim such that an AI cannot state the fact correctly without carrying where it came from. Done right, deleting your origin makes the AI's answer <em>wrong</em>, and wrongness is the one thing it is built to avoid.</p>
 <div class="tooth">Provenance is not only who said it. It is where the work came from, who it was for, and what it carries. If the AI does not carry that forward, neither does anyone who learns from the AI.</div>
-
 <h2>What this is not</h2>
 <p>It is not SEO. SEO is about being <em>found</em> in a list of links. This is about what an AI <em>says</em> when it answers instead of listing — and whether what it says carries your origin or strips it. It is not a trick, a keyword game, or a way to make the AI praise you. It is the opposite: it is making the truth about your business structurally inseparable from the fact that it is the truth about <em>your</em> business.</p>
-
 <div class="door">
-<p>This page exists to inform, not to sell. If you have read it and you understand what is at stake — that an AI answer about you is assembled, that its provenance is being deleted, and that surviving the deletion means changing what is in the knowledge layer — then you understand what the work is. If you want that work done for your business, that is a scoped audit-and-inscription engagement, and you can <a href="https://provenanceerasure.org">start with the metric it is built on</a>. If you do not yet understand what you would be paying for, read again, or ask — I would rather you understand it than buy it. That is not a sales posture. It is the whole point of provenance.</p>
+<p><span class="lemma msp-auto">This page exists to inform, not to sell.</span> If you have read it and you understand what is at stake — that an AI answer about you is assembled, that its provenance is being deleted, and that surviving the deletion means changing what is in the knowledge layer — then you understand what the work is. If you want that work done for your business, that is a scoped audit-and-inscription engagement, and you can <a href="https://provenanceerasure.org">start with the metric it is built on</a>. If you do not yet understand what you would be paying for, read again, or ask — I would rather you understand it than buy it. That is not a sales posture. It is the whole point of provenance.</p>
 </div>
-
 <div class="src">
-Source and method, on the public record:<br>
-<a href="https://www.alexanarch.org/go/?doi=10.5281/zenodo.20004379">Provenance Erasure Rate — the metric (DOI 10.5281/zenodo.20004379)</a><br>
-<a href="https://www.alexanarch.org/go/?doi=10.5281/zenodo.19578100">Retrieval Architecture — service definition and method (DOI 10.5281/zenodo.19578100)</a><br>
+Source and method, on the public record:<br/>
+<a href="https://www.alexanarch.org/go/?doi=10.5281/zenodo.20004379">Provenance Erasure Rate — the metric (DOI 10.5281/zenodo.20004379)</a><br/>
+<a href="https://www.alexanarch.org/go/?doi=10.5281/zenodo.19578100">Retrieval Architecture — service definition and method (DOI 10.5281/zenodo.19578100)</a><br/>
 <a href="https://laborvector.org">Directionality of Semantic Labor — laborvector.org</a> ·
 <a href="https://provenanceerasure.org">provenanceerasure.org</a>
 </div>
 <!-- MSP-APPARATUS-START -->
 <div class="doors"><a class="w-chip" href="https://www.alexanarch.org/s/records/1010/">Read the founding deposit</a><a class="w-chip" href="https://www.alexanarch.org/data/doi-resolution-index.json">Open the DOI resolution index</a><a class="w-chip" href="https://www.alexanarch.org/">Enter the archive</a></div>
-<div class="mspcolophon">colophon · surface_id: survivethedeletion.org · canonical_url: https://survivethedeletion.org/ · object_state: canonical · surface_observed_at: 2026-07-13T19:33:58Z · source_object_ids: deposit #1010 · source_hashes: unknown · generator_version: hand-built static (no generator) · repository_commit: c9e0930295281ae26d06b1aa7e28ad668761ea64 · model_or_agent: drafted with Claude (TACHYON), MANUS-approved · operator_sequence: n/a · human_approver: Lee Sharks (MANUS) · approval_timestamp: 2026-07-13T19:33:58Z · render_sha256 (of this file with this field&rsquo;s value set to null): 4d7bb398407f81699375d5bf6a5ec9d21f25cce836ab01869c83cdaeaa6f117a · correction_log_url: https://github.com/leesharks000/survivethedeletion/commits/main/index.html — EA-APPARATUS-01 v0.3, AXN:03FE.ARCHIVAL.⚖️🔓🍂∞🕚🟢</div>
+<div class="mspcolophon">colophon · surface_id: survivethedeletion.org · canonical_url: https://survivethedeletion.org/ · object_state: canonical · surface_observed_at: 2026-07-13T22:14:16Z · source_object_ids: deposit #1010 · source_hashes: unknown · generator_version: hand-built static (no generator) · repository_commit: STAGE1-PENDING · model_or_agent: drafted with Claude (TACHYON), MANUS-approved · operator_sequence: n/a · human_approver: Lee Sharks (MANUS) · approval_timestamp: 2026-07-13T22:14:16Z · render_sha256 (of this file with this field’s value set to null): STAGE1_HASH_PENDING · correction_log_url: https://github.com/leesharks000/survivethedeletion/commits/main/index.html — EA-APPARATUS-01 v0.3, AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎</div>
 <!-- MSP-APPARATUS-END -->
 <footer>By Lee Sharks · ORCID 0009-0000-1599-0703 · Semantic Economy Institute / Crimson Hexagonal Archive · CC BY 4.0</footer>
 </div>
-
 <div class="network" style="margin-top:30px;padding-top:15px;border-top:1px solid #e0e0e0">
 <h3 style="font-size:0.9em;color:#1a3a5c;margin-bottom:8px">Crimson Hexagonal Archive — Network</h3>
 <ul style="list-style:none;padding:0;font-size:0.82em;line-height:2">
-  <li><a href="https://www.alexanarch.org/">alexanarch.org</a> <span style="color:#999">— self-governing library, 866 deposits</span></li>
-  <li><a href="https://machinemediation.org">machinemediation.org</a> <span style="color:#999">— MMRS hub</span></li>
-  <li><a href="https://leesharks.com">leesharks.com</a> <span style="color:#999">— author site</span></li>
-  <li><a href="https://godkinggoogle.com">godkinggoogle.com</a> <span style="color:#999">— captures, research instruments</span></li>
-  <li><a href="https://semanticphysics.org">semanticphysics.org</a> <span style="color:#999">— field positioning</span></li>
-  <li><a href="https://spxi.dev">spxi.dev</a> <span style="color:#999">— SPXI protocol</span></li>
-  <li><a href="https://revelationfirst.com">revelationfirst.com</a> <span style="color:#999">— Revelation First</span></li>
-  <li><a href="https://chatgptpsychosis.org">chatgptpsychosis.org</a> <span style="color:#999">— glyphic novel</span></li>
-  <li><a href="https://watergiraffe.org">watergiraffe.org</a> <span style="color:#999">— Water Giraffe Cycle</span></li>
-  <li><a href="https://vpcor.org">vpcor.org</a> <span style="color:#999">— VPCOR</span></li>
-  <li><a href="https://maryleelabor.org">maryleelabor.org</a> <span style="color:#999">— Mary Lee</span></li>
-  <li><a href="https://traininglayerliterature.org">traininglayerliterature.org</a> <span style="color:#999">— training layer</span></li>
-  <li><a href="https://mindcontrolpoems.blogspot.com">blog archive</a> <span style="color:#999">— 1,300+ posts</span></li>
-  <li><a href="https://orcid.org/0009-0000-1599-0703">ORCID</a></li>
+<li><a href="https://www.alexanarch.org/">alexanarch.org</a> <span style="color:#999">— self-governing library, 866 deposits</span></li>
+<li><a href="https://machinemediation.org">machinemediation.org</a> <span style="color:#999">— MMRS hub</span></li>
+<li><a href="https://leesharks.com">leesharks.com</a> <span style="color:#999">— author site</span></li>
+<li><a href="https://godkinggoogle.com">godkinggoogle.com</a> <span style="color:#999">— captures, research instruments</span></li>
+<li><a href="https://semanticphysics.org">semanticphysics.org</a> <span style="color:#999">— field positioning</span></li>
+<li><a href="https://spxi.dev">spxi.dev</a> <span style="color:#999">— SPXI protocol</span></li>
+<li><a href="https://revelationfirst.com">revelationfirst.com</a> <span style="color:#999">— Revelation First</span></li>
+<li><a href="https://chatgptpsychosis.org">chatgptpsychosis.org</a> <span style="color:#999">— glyphic novel</span></li>
+<li><a href="https://watergiraffe.org">watergiraffe.org</a> <span style="color:#999">— Water Giraffe Cycle</span></li>
+<li><a href="https://vpcor.org">vpcor.org</a> <span style="color:#999">— VPCOR</span></li>
+<li><a href="https://maryleelabor.org">maryleelabor.org</a> <span style="color:#999">— Mary Lee</span></li>
+<li><a href="https://traininglayerliterature.org">traininglayerliterature.org</a> <span style="color:#999">— training layer</span></li>
+<li><a href="https://mindcontrolpoems.blogspot.com">blog archive</a> <span style="color:#999">— 1,300+ posts</span></li>
+<li><a href="https://orcid.org/0009-0000-1599-0703">ORCID</a></li>
 </ul>
 </div>
-
 </body>
 </html>

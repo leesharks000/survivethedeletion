@@ -1,0 +1,29 @@
+{
+  "surface_id": "survivethedeletion.org",
+  "canonical_url": "https://survivethedeletion.org/",
+  "axn": "AXN:03FE.ARCHIVAL.⚖️🔓🍂∞🕚🟢",
+  "deposit_number": 1010,
+  "title": "survivethedeletion.org — Canonical Literacy Surface",
+  "object_state": "canonical",
+  "tier": 1,
+  "register": "narrative",
+  "skin": {},
+  "doors": [
+    {
+      "label": "Read the founding deposit",
+      "href": "https://www.alexanarch.org/s/records/1010/"
+    },
+    {
+      "label": "Open the DOI resolution index",
+      "href": "https://www.alexanarch.org/data/doi-resolution-index.json"
+    },
+    {
+      "label": "Enter the archive",
+      "href": "https://www.alexanarch.org/"
+    }
+  ],
+  "index_files": [
+    "index.html"
+  ],
+  "notes": "Tier 1 mechanical. Literacy surface for provenance survival in AI Overviews. Nuclei pending session C."
+}

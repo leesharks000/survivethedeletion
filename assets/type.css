@@ -1,4 +1,4 @@
-/* survivethedeletion.org — type layer. Faces only; the paper ground is the site's own.
+/* survivethedeletion.vercel.app — type layer. Faces only; the paper ground is the site's own.
    Fifth fleet site declaring families with no @font-face. */
 @font-face{font-family:'IBM Plex Mono';src:url('/assets/fonts/IBMPlexMono-400.woff2')format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:'IBM Plex Mono';src:url('/assets/fonts/IBMPlexMono-600.woff2')format('woff2');font-weight:600;font-display:swap}

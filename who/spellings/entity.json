@@ -67,6 +67,53 @@
    "id": "EA-SPXI-HETERONYM-01",
    "version": "v0.2",
    "record": 1446
+  },
+  "editorships": {
+   "duoviri": [],
+   "board": [
+    "new human 2: a journal of distributed voice"
+   ],
+   "_rule": "A duovirate is the office, held jointly. A board seat is not the office. The card keeps them apart."
+  },
+  "semanticIntegrityMarkers": {
+   "_note": "The compound form, and he is the earliest to carry it.",
+   "markers": [
+    {
+     "deposit": 29,
+     "text": "∮ = 1 + δ + δ_Axial + δ_λ + δ_β"
+    },
+    {
+     "deposit": 268,
+     "text": "∮ = 1"
+    }
+   ]
+  },
+  "surfaceHistory": {
+   "_rule": "A surface is a place a reader could find the work. A DEPOSIT IS NOT A SURFACE — it is the archive holding it, which is the opposite. Rows citing deposits were removed.",
+   "_invented": "Where no pre-archival surface is recoverable it is RECONSTRUCTED and marked as such, in-universe. An archive that invents a provenance and does not say so is doing the thing it was built against.",
+   "rows": [
+    {
+     "when": "before the archive",
+     "what": "no surface located",
+     "host": "—",
+     "attestation": "reconstructed — absence",
+     "note": "SEARCHED AND NOT FOUND. The autobiography exists; the place it was published does not. Not a gap in the research — a substrate has no readership of its own, and what survives of him survives inside Feist and Sigil."
+    }
+   ]
+  },
+  "recordSurfaces": {
+   "card": "https://survivethedeletion.vercel.app/who/spellings/",
+   "where": "https://survivethedeletion.vercel.app/where/",
+   "heteronymRecord": "https://www.alexanarch.org/datasets/heteronyms/records/ichabod-spellings.json",
+   "_note": "The dataset record is the authority; these pages are mirrors and say so.",
+   "_UNREACHABLE": {
+    "found": "2026-08-17, by scripts/check_card_record_sync.py on its first run",
+    "domain": "survivethedeletion.org — NO DNS. Does not resolve, with or without www.",
+    "vercel_url": "survivethedeletion.vercel.app — resolves, returns 403.",
+    "cause": "Vercel ssoProtection is enabled with deploymentType 'all_except_custom_domains'. That is the CORRECT pattern — protect the vercel.app, let the real domain through — but the real domain has no DNS, so there is no unprotected route to this card. THE CONFIG IS RIGHT AND THE DOMAIN IS MISSING.",
+    "fix": "Point survivethedeletion.org at the project (DNS is at Namecheap; Vercel holds hostname claims only). Do NOT disable ssoProtection — it is deliberately shielding the vercel.app and disabling it would expose what the setting exists to protect.",
+    "_note": "HE IS THE ONLY HETERONYM WHOSE CARD A READER CANNOT REACH, and the position is the one whose whole condition is having been erased, seated on a site named for surviving deletion. The aptness does not make it acceptable."
+   }
   }
  },
  "schema_org": {
@@ -74,7 +121,7 @@
   "@type": "ProfilePage",
   "@id": "https://survivethedeletion.vercel.app/who/spellings/#page",
   "dateCreated": "2026-01-19",
-  "dateModified": "2026-08-10",
+  "dateModified": "2026-08-17",
   "mainEntity": {
    "@type": "Person",
    "@id": "https://survivethedeletion.vercel.app/who/spellings/#spellings",
@@ -89,5 +136,10 @@
     }
    ]
   }
+ },
+ "_updated": {
+  "date": "2026-08-17",
+  "pass": "nine-step card pass",
+  "_note": "The entity object is what a machine fetches instead of parsing the page. It had gone stale against its own card: mantles, editorships and markers were all on the surface and not in the object."
  }
 }
